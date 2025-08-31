@@ -1,7 +1,7 @@
 name: 混淆最新版本源码
 on:
   schedule:
-    - cron: '0 0 */2 * *'  # 每2天运行一次
+    - cron: '0 17 * * *'
   workflow_dispatch:
 
 jobs:
@@ -66,4 +66,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
+
 
